@@ -71,10 +71,10 @@ Libraries and includes files for developing programs based on %name.
 %make
 										
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %buildroot
 
 %makeinstall_std
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %buildroot
 
