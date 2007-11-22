@@ -1,15 +1,15 @@
 
 Name: pkcs11-helper
-Version: 1.03
+Version: 1.05
 Release: %mkrel 1
-Summary: pkcs11-helper is a library that simplifies the interaction with PKCS#11
-Source: %{name}-%{version}.tar.bz2
-URL: http://www.opensc-project.org
+Summary: A library that simplifies the interaction with PKCS#11
 License: GPL
 Group: System/Libraries
-BuildRoot: %{_tmppath}/%{name}-buildroot
+URL: http://www.opensc-project.org
+Source: http://www.opensc-project.org/files/pkcs11-helper/%{name}-%{version}.tar.bz2
 BuildRequires: pkgconfig
 BuildRequires: openssl-devel
+BuildRoot: %{_tmppath}/%{name}-%{version}
 
 %description
 pkcs11-helper is a library that simplifies the interaction with PKCS#11 providers for end-user
@@ -61,7 +61,6 @@ Libraries and includes files for developing programs based on %name.
 
 %prep
 %setup -q
-
 
 %build
 %configure2_5x \
