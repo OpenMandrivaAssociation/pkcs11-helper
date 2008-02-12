@@ -12,8 +12,8 @@ BuildRequires: openssl-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}
 
 %description
-pkcs11-helper is a library that simplifies the interaction with PKCS#11 providers for end-user
-applications.
+pkcs11-helper is a library that simplifies the interaction with PKCS#11
+providers for end-user applications.
 
 #-------------------------------------------------------------
 
