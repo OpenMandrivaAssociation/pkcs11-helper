@@ -1,7 +1,7 @@
 
 Name: pkcs11-helper
 Version: 1.05
-Release: %mkrel 2
+Release: %mkrel 3
 Summary: A library that simplifies the interaction with PKCS#11
 License: GPL
 Group: System/Libraries
