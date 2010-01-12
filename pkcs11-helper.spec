@@ -1,7 +1,8 @@
+%define major 1
 
 Name: pkcs11-helper
-Version: 1.05
-Release: %mkrel 3
+Version: 1.07
+Release: %mkrel 1
 Summary: A library that simplifies the interaction with PKCS#11
 License: GPL
 Group: System/Libraries
@@ -17,7 +18,7 @@ providers for end-user applications.
 
 #-------------------------------------------------------------
 
-%define libname %mklibname pcks11-helper 1
+%define libname %mklibname pcks11-helper %{major}
 
 %package -n %{libname}
 Summary: Dynamic libraries from %name
@@ -36,7 +37,7 @@ Dynamic libraries from %name.
 %files -n %{libname}
 %defattr(-,root,root)
 %{_docdir}/pkcs11-helper
-%{_libdir}/*.so.*
+%{_libdir}/*.so.%{major}*
 
 #-------------------------------------------------------------
 
