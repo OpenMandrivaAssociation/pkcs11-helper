@@ -2,7 +2,7 @@
 
 Name: pkcs11-helper
 Version: 1.07
-Release: %mkrel 3
+Release: %mkrel 4
 Summary: A library that simplifies the interaction with PKCS#11
 License: GPL
 Group: System/Libraries
