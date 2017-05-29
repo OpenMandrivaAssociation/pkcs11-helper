@@ -56,7 +56,7 @@ Libraries and includes files for developing programs based on %name.
 %setup -q
 
 %build
-%configure2_5x \
+%configure \
 	--disable-debug \
 	--disable-static
 
