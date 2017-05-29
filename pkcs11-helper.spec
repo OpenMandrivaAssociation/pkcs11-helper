@@ -2,12 +2,12 @@
 
 Summary:	A library that simplifies the interaction with PKCS#11
 Name:		pkcs11-helper
-Version:	1.10
-Release:	10
+Version:	1.22
+Release:	1
 License:	GPLv2
 Group:		System/Libraries
-Url:		http://www.opensc-project.org
-Source0:	http://www.opensc-project.org/files/pkcs11-helper/%{name}-%{version}.tar.bz2
+Url:		https://github.com/OpenSC/pkcs11-helper
+Source0:	https://github.com/OpenSC/pkcs11-helper/releases/download/%{name}-%{version}/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(openssl)
 
 %description
@@ -61,7 +61,7 @@ Libraries and includes files for developing programs based on %name.
 	--disable-static
 
 %make
-										
+
 %install
 %makeinstall_std
 
