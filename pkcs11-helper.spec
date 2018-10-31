@@ -3,7 +3,7 @@
 Summary:	A library that simplifies the interaction with PKCS#11
 Name:		pkcs11-helper
 Version:	1.23
-Release:	1
+Release:	2
 License:	GPLv2
 Group:		System/Libraries
 Url:		https://github.com/OpenSC/pkcs11-helper
