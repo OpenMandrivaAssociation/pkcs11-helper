@@ -2,8 +2,8 @@
 
 Summary:	A library that simplifies the interaction with PKCS#11
 Name:		pkcs11-helper
-Version:	1.23
-Release:	2
+Version:	1.25.1
+Release:	1
 License:	GPLv2
 Group:		System/Libraries
 Url:		https://github.com/OpenSC/pkcs11-helper
@@ -53,15 +53,15 @@ Libraries and includes files for developing programs based on %name.
 #-------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure \
 	--disable-debug \
 	--disable-static
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
