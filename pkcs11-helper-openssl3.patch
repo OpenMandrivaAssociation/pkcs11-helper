@@ -1,0 +1,15 @@
+diff -up pkcs11-helper-pkcs11-helper-1.27/lib/pkcs11h-openssl.c.omv~ pkcs11-helper-pkcs11-helper-1.27/lib/pkcs11h-openssl.c
+--- pkcs11-helper-pkcs11-helper-1.27/lib/pkcs11h-openssl.c.omv~	2021-06-23 13:56:39.594076549 +0200
++++ pkcs11-helper-pkcs11-helper-1.27/lib/pkcs11h-openssl.c	2021-06-23 13:56:51.977109594 +0200
+@@ -474,9 +474,11 @@ __pkcs11h_openssl_rsa_dec (
+ 		case RSA_PKCS1_OAEP_PADDING:
+ 			mech = CKM_RSA_PKCS_OAEP;
+ 		break;
++#ifdef RSA_SSLV23_PADDING
+ 		case RSA_SSLV23_PADDING:
+ 			rv = CKR_MECHANISM_INVALID;
+ 		break;
++#endif
+ 		case RSA_NO_PADDING:
+ 			mech = CKM_RSA_X_509;
+ 		break;
