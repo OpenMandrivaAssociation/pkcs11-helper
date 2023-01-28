@@ -2,12 +2,12 @@
 
 Summary:	A library that simplifies the interaction with PKCS#11
 Name:		pkcs11-helper
-Version:	1.27
-Release:	3
+Version:	1.29.0
+Release:	1
 License:	GPLv2
 Group:		System/Libraries
 Url:		https://github.com/OpenSC/pkcs11-helper
-Source0:	https://github.com/OpenSC/pkcs11-helper/archive/%{name}-%{version}.tar.gz
+Source0:	https://github.com/OpenSC/pkcs11-helper/archive/%{name}-%{name}-%{version}.tar.gz
 # https://github.com/OpenSC/pkcs11-helper/pull/4
 Patch0:         pkcs11-helper-rfc7512.patch
 Patch1:		pkcs11-helper-openssl3.patch
