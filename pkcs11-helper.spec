@@ -2,7 +2,7 @@
 
 Summary:	A library that simplifies the interaction with PKCS#11
 Name:		pkcs11-helper
-Version:	1.30.0
+Version:	1.31.0
 Release:	1
 License:	GPLv2
 Group:		System/Libraries
