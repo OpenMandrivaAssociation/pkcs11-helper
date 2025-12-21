@@ -11,6 +11,11 @@ Source0:	https://github.com/OpenSC/pkcs11-helper/archive/%{name}-%{name}-%{versi
 # https://github.com/OpenSC/pkcs11-helper/pull/4
 Patch0:         pkcs11-helper-rfc7512.patch
 #Patch1:		pkcs11-helper-openssl3.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(openssl)
 
 %description
